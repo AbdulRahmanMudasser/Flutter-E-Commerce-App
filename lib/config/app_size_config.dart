@@ -23,6 +23,6 @@ class AppSizeConfig {
   static double getProportionateScreenWidth(double inputWidth) {
     double screenWidth = AppSizeConfig.screenWidth;
 
-    return (inputWidth / 812.0) * screenWidth;
+    return (inputWidth / 375.0) * screenWidth;
   }
 }
