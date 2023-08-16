@@ -11,7 +11,7 @@ class ReusableButton extends StatelessWidget {
   });
 
   final String text;
-  final Function onPressed;
+  final void Function() onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class ReusableButton extends StatelessWidget {
           backgroundColor: AppColors.kPrimaryColor,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         ),
-        onPressed: () => onPressed,
+        onPressed: onPressed,
         child: Text(
           text,
           style: TextStyle(

@@ -6,4 +6,21 @@ class AppStrings {
 
   static const String continueText = "Continue";
 
+  static const String signIn = "Sign In";
+  static const String welcomeBack = "Welcome Back";
+  static const String signInWithEmailPassword = "Sign in with you email and password or continue with social media";
+  static const String email = "Email";
+  static const String enterEmail = "Enter Your Email";
+  static const String password = "Enter Your Password";
+  static const String enterPassword = "Enter Password";
+  static const String rememberMe = "Remember Me";
+  static const String forgotPassword = "Forgot Password";
+  static const String doNotHaveAccount = "Don't have an account?";
+  static const String signUp = "Sign Up";
+
+  static const kEmailNullError = "Please Enter Your Email";
+  static const kInvalidEmailNullError = "Please Enter Valid Email";
+  static const kPassNullError = "Please Enter Your Password";
+  static const kShortPassError = "Please Enter Your Password";
+  static const kMissMatchPassError = "Passwords Don't Match";
 }

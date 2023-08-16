@@ -10,7 +10,7 @@ class SplashPage extends StatelessWidget {
     AppSizeConfig().init(context);
 
     return const Scaffold(
-      body: SplashBody(),
+      body: SplashPageBody(),
     );
   }
 }
