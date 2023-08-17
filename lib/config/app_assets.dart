@@ -6,4 +6,7 @@ class AppAssets {
   static const String mail = "assets/icons/Mail.svg";
   static const String lock = "assets/icons/Lock.svg";
   static const String error = "assets/icons/Error.svg";
+  static const String google = "assets/icons/google-icon.svg";
+  static const String facebook = "assets/icons/facebook-2.svg";
+  static const String twitter = "assets/icons/twitter.svg";
 }
