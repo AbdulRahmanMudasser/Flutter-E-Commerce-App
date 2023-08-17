@@ -18,6 +18,8 @@ class AppStrings {
   static const String doNotHaveAccount = "Don't have an account?";
   static const String signUp = "Sign Up";
 
+  static const String pleaseEnterEmailForLink = "Please enter your email and we will send you a link to return to your account";
+
   static const kEmailNullError = "Please Enter Your Email";
   static const kInvalidEmailError = "Please Enter Valid Email";
   static const kPassNullError = "Please Enter Your Password";

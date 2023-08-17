@@ -28,9 +28,12 @@ class _RememberMeForgotPasswordState extends State<RememberMeForgotPassword> {
         ),
         const Text(AppStrings.rememberMe),
         const Spacer(),
-        const Text(
-          AppStrings.forgotPassword,
-          style: TextStyle(decoration: TextDecoration.underline),
+        GestureDetector(
+          onTap: () => Navigator.pushNamed(context, "/forgotPasswordPage"),
+          child: const Text(
+            AppStrings.forgotPassword,
+            style: TextStyle(decoration: TextDecoration.underline),
+          ),
         ),
       ],
     );

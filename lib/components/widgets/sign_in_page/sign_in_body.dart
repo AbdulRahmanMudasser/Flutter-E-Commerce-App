@@ -7,7 +7,7 @@ import 'package:flutter_e_commerce_app/config/app_assets.dart';
 import 'package:flutter_e_commerce_app/config/app_size_config.dart';
 import 'package:flutter_e_commerce_app/config/app_string.dart';
 
-import '../../../config/app_colors.dart';
+import 'no_account_text.dart';
 
 class SignInPageBody extends StatelessWidget {
   const SignInPageBody({super.key});
@@ -67,24 +67,7 @@ class SignInPageBody extends StatelessWidget {
                 SizedBox(
                   height: AppSizeConfig.getProportionateScreenHeight(20),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      AppStrings.doNotHaveAccount,
-                      style: TextStyle(
-                        fontSize: AppSizeConfig.getProportionateScreenWidth(16),
-                      ),
-                    ),
-                    Text(
-                      AppStrings.signUp,
-                      style: TextStyle(
-                        fontSize: AppSizeConfig.getProportionateScreenWidth(16),
-                        color: AppColors.kPrimaryColor,
-                      ),
-                    ),
-                  ],
-                ),
+                const NoAccountText(),
               ],
             ),
           ),

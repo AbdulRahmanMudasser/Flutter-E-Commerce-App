@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/models/sign_in_model.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../config/app_assets.dart';
@@ -8,9 +7,11 @@ import '../../../config/app_size_config.dart';
 class FormErrorText extends StatelessWidget {
   const FormErrorText({
     super.key,
+    required this.formErrors,
     required this.index,
   });
 
+  final List<String> formErrors;
   final int index;
 
   @override
@@ -25,7 +26,7 @@ class FormErrorText extends StatelessWidget {
         SizedBox(
           width: AppSizeConfig.getProportionateScreenWidth(20),
         ),
-        Text(SignInModel.errors[index]),
+        Text(formErrors[index]),
       ],
     );
   }

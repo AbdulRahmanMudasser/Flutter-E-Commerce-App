@@ -38,7 +38,9 @@ class _SignInFormState extends State<SignInForm> {
             height: AppSizeConfig.getProportionateScreenHeight(20),
           ),
           const RememberMeForgotPassword(),
-          const FormError(),
+          FormError(
+            formErrors: SignInModel.errors,
+          ),
           SizedBox(
             height: AppSizeConfig.getProportionateScreenHeight(20),
           ),
@@ -134,4 +136,3 @@ class _SignInFormState extends State<SignInForm> {
     );
   }
 }
-
