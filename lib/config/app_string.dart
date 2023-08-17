@@ -25,4 +25,7 @@ class AppStrings {
   static const kPassNullError = "Please Enter Your Password";
   static const kShortPassError = "Password Is Too Short";
   static const kMissMatchPassError = "Passwords Don't Match";
+
+  static const String loginSuccess = "Login Success";
+  static const String backToHome = "Back To Home";
 }

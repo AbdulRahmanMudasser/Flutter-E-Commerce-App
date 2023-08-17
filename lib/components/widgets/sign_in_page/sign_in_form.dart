@@ -49,6 +49,9 @@ class _SignInFormState extends State<SignInForm> {
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
+
+                // if all are valid then go to success page
+                Navigator.pushNamed(context, "/loginSuccessPage");
               }
             },
           ),
@@ -75,10 +78,14 @@ class _SignInFormState extends State<SignInForm> {
           setState(() {
             SignInModel.errors.remove(AppStrings.kPassNullError);
           });
+
+          return;
         } else if (value.length >= 8 && SignInModel.errors.contains(AppStrings.kShortPassError)) {
           setState(() {
             SignInModel.errors.remove(AppStrings.kShortPassError);
           });
+
+          return;
         }
         return;
       },
@@ -87,10 +94,14 @@ class _SignInFormState extends State<SignInForm> {
           setState(() {
             SignInModel.errors.add(AppStrings.kPassNullError);
           });
+
+          return "";
         } else if (value.length < 8 && !SignInModel.errors.contains(AppStrings.kShortPassError)) {
           setState(() {
             SignInModel.errors.add(AppStrings.kShortPassError);
           });
+
+          return "";
         }
         return null;
       },
@@ -126,10 +137,14 @@ class _SignInFormState extends State<SignInForm> {
           setState(() {
             SignInModel.errors.add(AppStrings.kEmailNullError);
           });
+
+          return "";
         } else if (!AppConstants.emailValidatorRegExp.hasMatch(value) && !SignInModel.errors.contains(AppStrings.kInvalidEmailError)) {
           setState(() {
             SignInModel.errors.add(AppStrings.kInvalidEmailError);
           });
+
+          return "";
         }
         return null;
       },

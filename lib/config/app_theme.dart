@@ -38,5 +38,6 @@ class AppTheme {
     contentPadding: const EdgeInsets.symmetric(horizontal: 42, vertical: 20),
     enabledBorder: AppConstants.outlineInputBorder,
     focusedBorder: AppConstants.outlineInputBorder,
+    errorBorder: AppConstants.outlineInputBorder,
   );
 }
