@@ -119,7 +119,7 @@ class _ValidateSignUpFormState extends State<ValidateSignUpForm> {
           addError(error: AppStrings.kPassNullError);
 
           return "";
-        } else if (value.length >= 8) {
+        } else if (value.length < 8) {
           addError(error: AppStrings.kShortPassError);
 
           return "";

@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 
 import '../../../config/app_assets.dart';
-import '../../../config/app_constants.dart';
 import '../../../config/app_size_config.dart';
 import '../../../config/app_string.dart';
 import '../custom_suffix_icon.dart';
 import '../reusable_button.dart';
 import '../sign_in_page/form_error.dart';
 
-class ForgotPasswordForm extends StatefulWidget {
-  const ForgotPasswordForm({super.key});
+class ConfirmPasswordForm extends StatefulWidget {
+  const ConfirmPasswordForm({super.key});
 
   @override
-  State<ForgotPasswordForm> createState() => _ForgotPasswordFormState();
+  State<ConfirmPasswordForm> createState() => _ConfirmPasswordFormState();
 }
 
-class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
+class _ConfirmPasswordFormState extends State<ConfirmPasswordForm> {
   final _formKey = GlobalKey<FormState>();
 
-  static List<String> errors = [];
+  List<String> errors = [];
 
-  late String email;
+  late String password;
 
   void addError({required String error}) {
     if (!errors.contains(error)) {
@@ -45,32 +44,33 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
       child: Column(
         children: [
           TextFormField(
-            onSaved: (newValue) => email = newValue!,
+            obscureText: true,
+            onSaved: (newValue) => password = newValue!,
             keyboardType: TextInputType.emailAddress,
             decoration: const InputDecoration(
-              labelText: AppStrings.email,
-              hintText: AppStrings.enterEmail,
+              labelText: AppStrings.password,
+              hintText: AppStrings.enterPassword,
               floatingLabelBehavior: FloatingLabelBehavior.always,
               suffixIcon: CustomSuffixIcon(
-                icon: AppAssets.mail,
+                icon: AppAssets.lock,
               ),
             ),
             onChanged: (value) {
               if (value.isNotEmpty) {
-                removeError(error: AppStrings.kEmailNullError);
-              } else if (AppConstants.emailValidatorRegExp.hasMatch(value)) {
-                removeError(error: AppStrings.kInvalidEmailError);
+                removeError(error: AppStrings.kPassNullError);
+              } else if (value.isNotEmpty && value.length >= 8) {
+                removeError(error: AppStrings.kShortPassError);
               }
 
-              return;
+              password = value;
             },
             validator: (value) {
               if (value!.isEmpty) {
-                addError(error: AppStrings.kEmailNullError);
+                addError(error: AppStrings.kPassNullError);
 
                 return "";
-              } else if (!AppConstants.emailValidatorRegExp.hasMatch(value)) {
-                addError(error: AppStrings.kInvalidEmailError);
+              } else if (value.length < 8) {
+                addError(error: AppStrings.kShortPassError);
 
                 return "";
               }
@@ -81,9 +81,7 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
           SizedBox(
             height: AppSizeConfig.getProportionateScreenHeight(30),
           ),
-          FormError(
-            formErrors: errors,
-          ),
+          FormError(formErrors: errors),
           SizedBox(
             height: AppSizeConfig.screenHeight * 0.1,
           ),
@@ -92,9 +90,6 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
-
-                // do whatever you want
-                Navigator.pushNamed(context, "/confirmPasswordPage");
               }
             },
           ),

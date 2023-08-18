@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../config/app_size_config.dart';
 import '../../../config/app_string.dart';
+import '../no_account_text.dart';
 import 'forgot_password_form.dart';
 
 class ForgotPasswordBody extends StatelessWidget {
@@ -39,6 +40,13 @@ class ForgotPasswordBody extends StatelessWidget {
                   height: AppSizeConfig.screenHeight * 0.1,
                 ),
                 const ForgotPasswordForm(),
+                SizedBox(
+                  height: AppSizeConfig.screenHeight * 0.14,
+                ),
+                const NoAccountText(),
+                SizedBox(
+                  height: AppSizeConfig.getProportionateScreenHeight(20),
+                ),
               ],
             ),
           ),
@@ -47,4 +55,3 @@ class ForgotPasswordBody extends StatelessWidget {
     );
   }
 }
-

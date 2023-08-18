@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/components/widgets/sign_up_page/sign_up_form.dart';
-import 'package:flutter_e_commerce_app/components/widgets/social_cards_row.dart';
+import 'package:flutter_e_commerce_app/components/widgets/no_account_text.dart';
+import 'package:flutter_e_commerce_app/config/app_size_config.dart';
 
-import '../../../config/app_size_config.dart';
 import '../../../config/app_string.dart';
+import 'confirm_password_form.dart';
 
-class SignUpBody extends StatelessWidget {
-  const SignUpBody({super.key});
+class ConfirmPasswordBody extends StatelessWidget {
+  const ConfirmPasswordBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +19,10 @@ class SignUpBody extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(
-                  height: AppSizeConfig.screenHeight * 0.02,
+                  height: AppSizeConfig.screenHeight * 0.04,
                 ),
                 Text(
-                  AppStrings.registerAccount,
+                  AppStrings.confirmPassword,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: AppSizeConfig.getProportionateScreenWidth(28),
@@ -33,24 +33,17 @@ class SignUpBody extends StatelessWidget {
                   height: AppSizeConfig.getProportionateScreenHeight(10),
                 ),
                 const Text(
-                  AppStrings.completeYourDetails,
+                  AppStrings.pleaseEnterNewPassword,
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
-                  height: AppSizeConfig.screenHeight * 0.07,
+                  height: AppSizeConfig.screenHeight * 0.1,
                 ),
-                SignUpForm(),
+                const ConfirmPasswordForm(),
                 SizedBox(
-                  height: AppSizeConfig.screenHeight * 0.07,
+                  height: AppSizeConfig.screenHeight * 0.14,
                 ),
-                const SocialCardsRow(),
-                SizedBox(
-                  height: AppSizeConfig.getProportionateScreenHeight(20),
-                ),
-                const Text(
-                  AppStrings.byContinuing,
-                  textAlign: TextAlign.center,
-                ),
+                const NoAccountText(),
                 SizedBox(
                   height: AppSizeConfig.getProportionateScreenHeight(20),
                 ),
@@ -62,3 +55,4 @@ class SignUpBody extends StatelessWidget {
     );
   }
 }
+

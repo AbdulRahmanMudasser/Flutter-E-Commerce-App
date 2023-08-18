@@ -22,7 +22,7 @@ class SignInPageBody extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(
-                  height: AppSizeConfig.screenHeight * 0.04,
+                  height: AppSizeConfig.screenHeight * 0.02,
                 ),
                 Text(
                   AppStrings.welcomeBack,
@@ -51,6 +51,9 @@ class SignInPageBody extends StatelessWidget {
                   height: AppSizeConfig.getProportionateScreenHeight(20),
                 ),
                 const NoAccountText(),
+                SizedBox(
+                  height: AppSizeConfig.getProportionateScreenHeight(20),
+                ),
               ],
             ),
           ),

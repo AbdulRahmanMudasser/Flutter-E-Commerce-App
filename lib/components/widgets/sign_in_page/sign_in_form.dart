@@ -54,6 +54,9 @@ class _SignInFormState extends State<SignInForm> {
             height: AppSizeConfig.getProportionateScreenHeight(20),
           ),
           const RememberMeForgotPassword(),
+          SizedBox(
+            height: AppSizeConfig.getProportionateScreenHeight(30),
+          ),
           FormError(
             formErrors: errors,
           ),
@@ -131,7 +134,7 @@ class _SignInFormState extends State<SignInForm> {
           addError(error: AppStrings.kPassNullError);
 
           return "";
-        } else if(value.length >= 8) {
+        } else if(value.length < 8) {
           addError(error: AppStrings.kShortPassError);
 
           return "";
