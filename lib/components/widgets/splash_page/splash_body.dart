@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/components/widgets/splash_page/splash_content.dart';
-import 'package:flutter_e_commerce_app/config/app_constants.dart';
 import 'package:flutter_e_commerce_app/config/app_size_config.dart';
 import 'package:flutter_e_commerce_app/config/app_string.dart';
 import 'package:flutter_e_commerce_app/models/splash_model.dart';

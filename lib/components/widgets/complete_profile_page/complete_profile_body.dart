@@ -1,15 +1,11 @@
-import 'dart:core';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/components/widgets/sign_in_page/sign_in_form.dart';
 import 'package:flutter_e_commerce_app/config/app_size_config.dart';
-import 'package:flutter_e_commerce_app/config/app_string.dart';
 
-import '../social_cards_row.dart';
-import '../no_account_text.dart';
+import '../../../config/app_string.dart';
+import 'complete_profile_form.dart';
 
-class SignInPageBody extends StatelessWidget {
-  const SignInPageBody({super.key});
+class CompleteProfileBody extends StatelessWidget {
+  const CompleteProfileBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +21,7 @@ class SignInPageBody extends StatelessWidget {
                   height: AppSizeConfig.screenHeight * 0.02,
                 ),
                 Text(
-                  AppStrings.welcomeBack,
+                  AppStrings.completeProfile,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: AppSizeConfig.getProportionateScreenWidth(28),
@@ -36,23 +32,19 @@ class SignInPageBody extends StatelessWidget {
                   height: AppSizeConfig.getProportionateScreenHeight(10),
                 ),
                 const Text(
-                  AppStrings.signInWithEmailPassword,
+                  AppStrings.completeYourDetails,
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
-                  height: AppSizeConfig.screenHeight * 0.08,
+                  height: AppSizeConfig.screenHeight * 0.05,
                 ),
-                const SignInForm(),
+                const CompleteProfileForm(),
                 SizedBox(
-                  height: AppSizeConfig.screenHeight * 0.08,
+                  height: AppSizeConfig.getProportionateScreenHeight(30),
                 ),
-                const SocialCardsRow(),
-                SizedBox(
-                  height: AppSizeConfig.getProportionateScreenHeight(20),
-                ),
-                const NoAccountText(),
-                SizedBox(
-                  height: AppSizeConfig.getProportionateScreenHeight(20),
+                const Text(
+                  AppStrings.byContinuing,
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),

@@ -11,4 +11,10 @@ class AppAssets {
   static const String google = "assets/icons/google-icon.svg";
   static const String facebook = "assets/icons/facebook-2.svg";
   static const String twitter = "assets/icons/twitter.svg";
+
+  static const String phone = "assets/icons/Phone.svg";
+  static const String user = "assets/icons/User.svg";
+  static const String location = "assets/icons/Location point.svg";
+
+  static const String settings = "assets/icons/Settings.svg";
 }

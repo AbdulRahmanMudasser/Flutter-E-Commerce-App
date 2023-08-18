@@ -27,6 +27,7 @@ class SignUpForm extends StatelessWidget {
                 _formKey.currentState!.save();
 
                 // go to complete profile page
+                Navigator.pushNamed(context, "/completeProfilePage");
               }
             },
           ),

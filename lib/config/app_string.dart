@@ -20,11 +20,15 @@ class AppStrings {
 
   static const String pleaseEnterEmailForLink = "Please enter your email and we will send you \na link to return to your account";
 
-  static const kEmailNullError = "Please Enter Your Email";
-  static const kInvalidEmailError = "Please Enter Valid Email";
-  static const kPassNullError = "Please Enter Your Password";
-  static const kShortPassError = "Password Is Too Short";
-  static const kMissMatchPassError = "Passwords Don't Match";
+  static const String kEmailNullError = "Please Enter Your Email";
+  static const String kInvalidEmailError = "Please Enter Valid Email";
+  static const String kPassNullError = "Please Enter Your Password";
+  static const String kShortPassError = "Password Is Too Short";
+  static const String kMissMatchPassError = "Passwords Don't Match";
+  static const String kNameNullError = "Please Enter Your Name";
+  static const String kPhoneNumberNullError = "Please Enter Your Phone Number";
+  static const String kAddressNullError = "Please Enter Your Address";
+
 
   static const String loginSuccess = "Login Success";
   static const String backToHome = "Back To Home";
@@ -36,4 +40,14 @@ class AppStrings {
   static const String byContinuing = "By continuing you confirm that you agree \nwith our Terms and Conditions";
 
   static const String pleaseEnterNewPassword = "Please enter your new password";
+
+  static const String completeProfile = "Complete Profile";
+  static const String firstName = "First Name";
+  static const String enterFirstName = "Enter Your First Name";
+  static const String secondName = "Second Name";
+  static const String enterSecondName = "Enter Your Second Name";
+  static const String phoneNumber = "Phone Number";
+  static const String enterPhoneNumber = "Enter Your Phone Number";
+  static const String address = "Address";
+  static const String enterAddress = "Enter Your Address";
 }

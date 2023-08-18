@@ -10,36 +10,38 @@ class LoginSuccessBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height: AppSizeConfig.screenHeight * 0.04,
-        ),
-        Image.asset(
-          AppAssets.loginSuccess,
-          height: AppSizeConfig.screenHeight * 0.4,
-        ),
-        SizedBox(
-          height: AppSizeConfig.screenHeight * 0.08,
-        ),
-        Text(
-          AppStrings.loginSuccess,
-          style: TextStyle(
-            fontSize: AppSizeConfig.getProportionateScreenWidth(30),
-            fontWeight: FontWeight.bold,
-            color: Colors.black,
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          SizedBox(
+            height: AppSizeConfig.screenHeight * 0.04,
           ),
-        ),
-        const Spacer(),
-        SizedBox(
-          width: AppSizeConfig.screenWidth * 0.6,
-          child: ReusableButton(
-            text: AppStrings.backToHome,
-            onPressed: () {},
+          Image.asset(
+            AppAssets.loginSuccess,
+            height: AppSizeConfig.screenHeight * 0.4,
           ),
-        ),
-        const Spacer(),
-      ],
+          SizedBox(
+            height: AppSizeConfig.screenHeight * 0.08,
+          ),
+          Text(
+            AppStrings.loginSuccess,
+            style: TextStyle(
+              fontSize: AppSizeConfig.getProportionateScreenWidth(30),
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
+          ),
+          const Spacer(),
+          SizedBox(
+            width: AppSizeConfig.screenWidth * 0.6,
+            child: ReusableButton(
+              text: AppStrings.backToHome,
+              onPressed: () {},
+            ),
+          ),
+          const Spacer(),
+        ],
+      ),
     );
   }
 }
