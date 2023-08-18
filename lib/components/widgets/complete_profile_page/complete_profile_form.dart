@@ -68,6 +68,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 // _formKey.currentState!.save();
+
+                // go to otp verification page
+                Navigator.pushNamed(context, "/otpVerificationPage");
               }
             },
           ),
@@ -153,7 +156,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   TextFormField buildAddressTextFormField() {
     return TextFormField(
       onSaved: (newValue) => address = newValue!,
-      maxLines: 2,
+      // maxLines: 2,
       decoration: const InputDecoration(
         labelText: AppStrings.address,
         hintText: AppStrings.enterAddress,

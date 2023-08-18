@@ -50,6 +50,9 @@ class _ValidateSignUpFormState extends State<ValidateSignUpForm> {
           height: AppSizeConfig.getProportionateScreenHeight(30),
         ),
         buildConfirmPasswordTextFormField(),
+        SizedBox(
+          height: AppSizeConfig.getProportionateScreenHeight(30),
+        ),
         FormError(formErrors: errors),
       ],
     );

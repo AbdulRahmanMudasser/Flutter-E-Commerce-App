@@ -50,4 +50,9 @@ class AppStrings {
   static const String enterPhoneNumber = "Enter Your Phone Number";
   static const String address = "Address";
   static const String enterAddress = "Enter Your Address";
+
+  static const String otpVerification = "OTP Verification";
+  static const String weSentCode = "We sent your code to +1 898 860 ***";
+  static const String codeExpires = "This code will expired in ";
+  static const String resendOTPCode = "Resend OTP Code";
 }
