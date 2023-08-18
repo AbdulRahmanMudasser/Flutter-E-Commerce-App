@@ -39,5 +39,7 @@ class AppTheme {
     enabledBorder: AppConstants.outlineInputBorder,
     focusedBorder: AppConstants.outlineInputBorder,
     errorBorder: AppConstants.outlineInputBorder,
+    focusedErrorBorder: AppConstants.outlineInputBorder,
+
   );
 }

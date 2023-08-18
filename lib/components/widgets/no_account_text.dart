@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../config/app_colors.dart';
-import '../../../config/app_size_config.dart';
-import '../../../config/app_string.dart';
+import '../../config/app_colors.dart';
+import '../../config/app_size_config.dart';
+import '../../config/app_string.dart';
 
 class NoAccountText extends StatelessWidget {
   const NoAccountText({
@@ -21,11 +21,14 @@ class NoAccountText extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 5),
-        Text(
-          AppStrings.signUp,
-          style: TextStyle(
-            fontSize: AppSizeConfig.getProportionateScreenWidth(16),
-            color: AppColors.kPrimaryColor,
+        GestureDetector(
+          onTap: () => Navigator.pushNamed(context, "/signUpPage"),
+          child: Text(
+            AppStrings.signUp,
+            style: TextStyle(
+              fontSize: AppSizeConfig.getProportionateScreenWidth(16),
+              color: AppColors.kPrimaryColor,
+            ),
           ),
         ),
       ],

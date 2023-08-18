@@ -1,15 +1,12 @@
-import 'dart:core';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/components/widgets/sign_in_page/sign_in_form.dart';
-import 'package:flutter_e_commerce_app/config/app_size_config.dart';
-import 'package:flutter_e_commerce_app/config/app_string.dart';
+import 'package:flutter_e_commerce_app/components/widgets/sign_up_page/sign_up_form.dart';
+import 'package:flutter_e_commerce_app/components/widgets/social_cards_row.dart';
 
-import '../social_cards_row.dart';
-import '../no_account_text.dart';
+import '../../../config/app_size_config.dart';
+import '../../../config/app_string.dart';
 
-class SignInPageBody extends StatelessWidget {
-  const SignInPageBody({super.key});
+class SignUpBody extends StatelessWidget {
+  const SignUpBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +19,10 @@ class SignInPageBody extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(
-                  height: AppSizeConfig.screenHeight * 0.04,
+                  height: AppSizeConfig.screenHeight * 0.02,
                 ),
                 Text(
-                  AppStrings.welcomeBack,
+                  AppStrings.registerAccount,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: AppSizeConfig.getProportionateScreenWidth(28),
@@ -36,21 +33,24 @@ class SignInPageBody extends StatelessWidget {
                   height: AppSizeConfig.getProportionateScreenHeight(10),
                 ),
                 const Text(
-                  AppStrings.signInWithEmailPassword,
+                  AppStrings.completeYourDetails,
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
-                  height: AppSizeConfig.screenHeight * 0.08,
+                  height: AppSizeConfig.screenHeight * 0.07,
                 ),
-                const SignInForm(),
+                SignUpForm(),
                 SizedBox(
-                  height: AppSizeConfig.screenHeight * 0.08,
+                  height: AppSizeConfig.screenHeight * 0.07,
                 ),
                 const SocialCardsRow(),
                 SizedBox(
                   height: AppSizeConfig.getProportionateScreenHeight(20),
                 ),
-                const NoAccountText(),
+                const Text(
+                  AppStrings.byContinuing,
+                  textAlign: TextAlign.center,
+                ),
               ],
             ),
           ),
@@ -59,4 +59,3 @@ class SignInPageBody extends StatelessWidget {
     );
   }
 }
-
