@@ -15,38 +15,36 @@ class LoginSuccessPage extends StatelessWidget {
         leading: const SizedBox(),
         title: const Text(AppStrings.loginSuccess),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(
-              height: AppSizeConfig.screenHeight * 0.04,
+      body: Column(
+        children: [
+          SizedBox(
+            height: AppSizeConfig.screenHeight * 0.04,
+          ),
+          Image.asset(
+            AppAssets.loginSuccess,
+            height: AppSizeConfig.screenHeight * 0.4,
+          ),
+          SizedBox(
+            height: AppSizeConfig.screenHeight * 0.08,
+          ),
+          Text(
+            AppStrings.loginSuccess,
+            style: TextStyle(
+              fontSize: AppSizeConfig.getProportionateScreenWidth(30),
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
-            Image.asset(
-              AppAssets.loginSuccess,
-              height: AppSizeConfig.screenHeight * 0.4,
+          ),
+          const Spacer(),
+          SizedBox(
+            width: AppSizeConfig.screenWidth * 0.6,
+            child: ReusableButton(
+              text: AppStrings.backToHome,
+              onPressed: () => Navigator.pushNamed(context, "/homePage"),
             ),
-            SizedBox(
-              height: AppSizeConfig.screenHeight * 0.08,
-            ),
-            Text(
-              AppStrings.loginSuccess,
-              style: TextStyle(
-                fontSize: AppSizeConfig.getProportionateScreenWidth(30),
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
-            ),
-            const Spacer(),
-            SizedBox(
-              width: AppSizeConfig.screenWidth * 0.6,
-              child: ReusableButton(
-                text: AppStrings.backToHome,
-                onPressed: () {},
-              ),
-            ),
-            const Spacer(),
-          ],
-        ),
+          ),
+          const Spacer(),
+        ],
       ),
     );
   }
