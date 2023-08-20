@@ -71,6 +71,23 @@ class AppStrings {
   static const String product4Desc =
       "Immerse yourself in audio perfection with the Logitech Head headphones. Experience crystal-clear sound quality and comfortable wear, making these headphones an essential accessory for music lovers and gamers alike.";
 
+  static const String product5Title = "Cycling Helmet - Giro";
+  static const String product5Desc =
+      "Lightweight and comfortable to wear. Optional MIPS technology makes it one of the safest helmets on the market. Dial-adjust system for an easy and accurate fit.";
+
+  static const String product6Title = "Elegant Striped Oxford Shirt";
+  static const String product6Desc =
+      "Made from high-quality breathable fabric, this shirt is perfect for any occasion, whether it's a formal event or a casual gathering. The attention to detail and impeccable craftsmanship make this shirt a must-have addition to your wardrobe.";
+
+  static const String product7Title = "VelocityMax Pro Performance Running Shoes";
+  static const String product7Desc =
+      "Introducing our VelocityMax Pro Performance Running Shoes, designed to take your running experience to the next level. These shoes are meticulously engineered to provide maximum comfort, support, and speed. The advanced cushioning technology absorbs impact, reducing strain on your joints during high-intensity runs. ";
+
+  static const String product8Title = "Breezy Linen Summer Shirt";
+  static const String product8Desc =
+      "Stay cool and stylish this summer with our Breezy Linen Summer Shirt. Crafted from lightweight and breathable linen fabric, this shirt is a perfect blend of comfort and fashion.";
+
+
   static const String searchProduct = "Search Product";
   static const String summerSurprise = "A Summer Surprise \n";
   static const String cashback = "Cashback 20%";
@@ -90,4 +107,8 @@ class AppStrings {
 
   static const String seeMoreDetail = "See More Detail";
   static const String addToCart = "Add To Cart";
+  static const String yourCart = "Your Cart";
+  static const String addVoucherCode = "Add Voucher Code";
+  static const String total = "Total:\n";
+  static const String checkout = "Check Out";
 }

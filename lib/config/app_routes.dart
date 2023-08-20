@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_e_commerce_app/pages/cart_page.dart';
 import 'package:flutter_e_commerce_app/pages/complete_profile_page.dart';
 import 'package:flutter_e_commerce_app/pages/confirm_password_page.dart';
 import 'package:flutter_e_commerce_app/pages/fogot_password_page.dart';
@@ -21,6 +22,7 @@ class AppRoutes {
     "/completeProfilePage": (context) => const CompleteProfilePage(),
     "/otpVerificationPage": (context) => const OTPVerificationPage(),
     "/homePage": (context) => const HomePage(),
-  "/productDetailsPage": (context) => const ProductDetailsPage(),
+    "/productDetailsPage": (context) => const ProductDetailsPage(),
+    "/cartPage": (context) => const CartPage(),
   };
 }

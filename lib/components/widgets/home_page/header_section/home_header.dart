@@ -20,11 +20,12 @@ class HomeHeader extends StatelessWidget {
           const SearchProduct(),
           IconButtonWithCounter(
             icon: AppAssets.cart,
-            onTap: () {},
+            itemCount: 3,
+            onTap: () => Navigator.pushNamed(context, "/cartPage"),
           ),
           IconButtonWithCounter(
             icon: AppAssets.bell,
-            itemCount: 3,
+            itemCount: 4,
             onTap: () {},
           ),
         ],
@@ -32,6 +33,3 @@ class HomeHeader extends StatelessWidget {
     );
   }
 }
-
-
-

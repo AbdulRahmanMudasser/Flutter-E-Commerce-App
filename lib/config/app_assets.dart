@@ -15,6 +15,10 @@ class AppAssets {
   static const String product2Image = "assets/images/Image Popular Product 2.png";
   static const String product3Image = "assets/images/glap.png";
   static const String product4Image = "assets/images/wireless headset.png";
+  static const String product5Image = "assets/images/Image Popular Product 3.png";
+  static const String product6Image = "assets/images/product 1 image.png";
+  static const String product7Image = "assets/images/shoes2.png";
+  static const String product8Image = "assets/images/tshirt.png";
 
   static const String banner1 = "assets/images/Image Banner 2.png";
   static const String banner2 = "assets/images/Image Banner 3.png";
@@ -27,6 +31,8 @@ class AppAssets {
   static const String google = "assets/icons/google-icon.svg";
   static const String facebook = "assets/icons/facebook-2.svg";
   static const String twitter = "assets/icons/twitter.svg";
+
+  static const String backIcon = "assets/icons/Back ICon.svg";
 
   static const String phone = "assets/icons/Phone.svg";
   static const String user = "assets/icons/User.svg";
@@ -44,6 +50,9 @@ class AppAssets {
 
   static const String heart = "assets/icons/Heart Icon_2.svg";
   static const String star = "assets/icons/Star Icon.svg";
+
+  static const String trash = "assets/icons/Trash.svg";
+  static const String receipt = "assets/icons/receipt.svg";
 
   static const String settings = "assets/icons/Settings.svg";
 }
