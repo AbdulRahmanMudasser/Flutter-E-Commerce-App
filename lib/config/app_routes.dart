@@ -5,6 +5,7 @@ import 'package:flutter_e_commerce_app/pages/fogot_password_page.dart';
 import 'package:flutter_e_commerce_app/pages/home_page.dart';
 import 'package:flutter_e_commerce_app/pages/login_success_page.dart';
 import 'package:flutter_e_commerce_app/pages/otp_verification_page.dart';
+import 'package:flutter_e_commerce_app/pages/product_details_page.dart';
 import 'package:flutter_e_commerce_app/pages/sign_in_page.dart';
 import 'package:flutter_e_commerce_app/pages/sign_up_page.dart';
 import 'package:flutter_e_commerce_app/pages/splash_page.dart';
@@ -20,5 +21,6 @@ class AppRoutes {
     "/completeProfilePage": (context) => const CompleteProfilePage(),
     "/otpVerificationPage": (context) => const OTPVerificationPage(),
     "/homePage": (context) => const HomePage(),
+  "/productDetailsPage": (context) => const ProductDetailsPage(),
   };
 }

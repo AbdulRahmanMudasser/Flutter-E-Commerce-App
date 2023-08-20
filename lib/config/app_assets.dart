@@ -43,6 +43,7 @@ class AppAssets {
   static const String discover = "assets/icons/Discover.svg";
 
   static const String heart = "assets/icons/Heart Icon_2.svg";
+  static const String star = "assets/icons/Star Icon.svg";
 
   static const String settings = "assets/icons/Settings.svg";
 }

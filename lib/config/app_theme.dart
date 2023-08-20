@@ -29,8 +29,8 @@ class AppTheme {
   );
 
   static TextTheme textTheme = const TextTheme(
-    bodyLarge: TextStyle(color: AppColors.kTextColor),
-    bodyMedium: TextStyle(color: AppColors.kTextColor),
+    titleLarge: TextStyle(color: AppColors.kTextColor),
+    titleMedium: TextStyle(color: AppColors.kTextColor),
   );
 
   static InputDecorationTheme inputDecorationTheme = InputDecorationTheme(
@@ -40,6 +40,5 @@ class AppTheme {
     focusedBorder: AppConstants.outlineInputBorder,
     errorBorder: AppConstants.outlineInputBorder,
     focusedErrorBorder: AppConstants.outlineInputBorder,
-
   );
 }

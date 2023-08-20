@@ -29,7 +29,6 @@ class AppStrings {
   static const String kPhoneNumberNullError = "Please Enter Your Phone Number";
   static const String kAddressNullError = "Please Enter Your Address";
 
-
   static const String loginSuccess = "Login Success";
   static const String backToHome = "Back To Home";
 
@@ -56,17 +55,21 @@ class AppStrings {
   static const String codeExpires = "This code will expired in ";
   static const String resendOTPCode = "Resend OTP Code";
 
-  static const String product1Title = "Wireless Controller for PS4";
-  static const String product1Desc = "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing.";
+  static const String product1Title = "Wireless Controller for PS4™";
+  static const String product1Desc =
+      "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing.";
 
   static const String product2Title = "Nike Sport White - Man Pant";
-  static const String product2Desc = "Elevate your sporty style with these sleek and comfortable white pants from Nike. Designed for men who value both fashion and functionality, these pants are perfect for workouts and casual outings.";
+  static const String product2Desc =
+      "Elevate your sporty style with these sleek and comfortable white pants from Nike. Designed for men who value both fashion and functionality, these pants are perfect for workouts and casual outings.";
 
   static const String product3Title = "Gloves XC Omega - Polygon";
-  static const String product3Desc = "Conquer the trails with confidence using the Gloves XC Omega in a striking polygon design. These gloves offer superior grip, protection, and style for outdoor enthusiasts who demand high performance.";
+  static const String product3Desc =
+      "Conquer the trails with confidence using the Gloves XC Omega in a striking polygon design. These gloves offer superior grip, protection, and style for outdoor enthusiasts who demand high performance.";
 
   static const String product4Title = "Logitech Head";
-  static const String product4Desc = "Immerse yourself in audio perfection with the Logitech Head headphones. Experience crystal-clear sound quality and comfortable wear, making these headphones an essential accessory for music lovers and gamers alike.";
+  static const String product4Desc =
+      "Immerse yourself in audio perfection with the Logitech Head headphones. Experience crystal-clear sound quality and comfortable wear, making these headphones an essential accessory for music lovers and gamers alike.";
 
   static const String searchProduct = "Search Product";
   static const String summerSurprise = "A Summer Surprise \n";
@@ -84,4 +87,7 @@ class AppStrings {
   static const String smartPhone = "Smart Phones";
   static const String brands = "Brands";
   static const String fashion = "Fashion";
+
+  static const String seeMoreDetail = "See More Detail";
+  static const String addToCart = "Add To Cart";
 }
