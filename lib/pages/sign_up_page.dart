@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/config/app_string.dart';
 import 'package:flutter_e_commerce_app/config/app_text_styles.dart';
+import 'package:flutter_svg/svg.dart';
 
+import '../components/widgets/product_details_page/rounded_icon_button.dart';
 import '../components/widgets/sign_up_page/sign_up_form.dart';
 import '../components/widgets/social_cards_row.dart';
+import '../config/app_assets.dart';
 import '../config/app_size_config.dart';
 
 class SignUpPage extends StatelessWidget {
@@ -14,6 +17,10 @@ class SignUpPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(AppStrings.signUp),
+        leading: RoundedIconButton(
+          icon: SvgPicture.asset(AppAssets.backIcon),
+          onPressed: () => Navigator.pop(context),
+        ),
       ),
       body: SafeArea(
         child: SizedBox(

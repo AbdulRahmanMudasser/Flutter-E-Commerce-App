@@ -22,7 +22,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             RoundedIconButton(
-              icon: Icons.arrow_back,
+              icon: SvgPicture.asset(AppAssets.backIcon),
               onPressed: () => Navigator.pop(context),
             ),
             Container(

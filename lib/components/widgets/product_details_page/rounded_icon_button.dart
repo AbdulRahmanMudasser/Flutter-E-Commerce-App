@@ -9,7 +9,7 @@ class RoundedIconButton extends StatelessWidget {
     required this.onPressed,
   });
 
-  final IconData icon;
+  final Widget icon;
   final GestureTapCallback onPressed;
 
   @override
@@ -27,9 +27,7 @@ class RoundedIconButton extends StatelessWidget {
           // padding: const EdgeInsets.only(left: 7),
           iconColor: Colors.black,
         ),
-        child: Icon(
-          icon,
-        ),
+        child: icon
       ),
     );
   }

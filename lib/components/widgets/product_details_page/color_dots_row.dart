@@ -30,14 +30,14 @@ class ColorDotsRow extends StatelessWidget {
           ),
           const Spacer(),
           RoundedIconButton(
-            icon: Icons.remove,
+            icon: const Icon(Icons.remove),
             onPressed: () {},
           ),
           SizedBox(
             width: AppSizeConfig.getProportionateScreenWidth(30),
           ),
           RoundedIconButton(
-            icon: Icons.add,
+            icon: const Icon(Icons.add),
             onPressed: () {},
           ),
         ],

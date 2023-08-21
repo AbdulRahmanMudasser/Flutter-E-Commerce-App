@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/config/app_text_styles.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../components/widgets/confirm_password_page/confirm_password_form.dart';
 import '../components/widgets/no_account_text.dart';
+import '../components/widgets/product_details_page/rounded_icon_button.dart';
+import '../config/app_assets.dart';
 import '../config/app_size_config.dart';
 import '../config/app_string.dart';
 
@@ -14,6 +17,10 @@ class ConfirmPasswordPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(AppStrings.confirmPassword),
+        leading: RoundedIconButton(
+          icon: SvgPicture.asset(AppAssets.backIcon),
+          onPressed: () => Navigator.pop(context),
+        ),
       ),
       body: SafeArea(
         child: SizedBox(
