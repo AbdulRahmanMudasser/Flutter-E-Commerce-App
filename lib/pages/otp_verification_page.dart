@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/config/app_size_config.dart';
 import 'package:flutter_e_commerce_app/config/app_text_styles.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../components/widgets/otp_verification_page/otp_code_timer.dart';
 import '../components/widgets/otp_verification_page/otp_form.dart';
+import '../components/widgets/product_details_page/rounded_icon_button.dart';
+import '../config/app_assets.dart';
 import '../config/app_string.dart';
 
 class OTPVerificationPage extends StatelessWidget {
@@ -14,6 +17,10 @@ class OTPVerificationPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(AppStrings.otpVerification),
+        leading: RoundedIconButton(
+          icon: SvgPicture.asset(AppAssets.backIcon),
+          onPressed: () => Navigator.pop(context),
+        ),
       ),
       body: SingleChildScrollView(
         child: SizedBox(

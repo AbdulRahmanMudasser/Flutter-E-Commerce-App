@@ -27,8 +27,14 @@ class _ProductImagesState extends State<ProductImages> {
           width: AppSizeConfig.getProportionateScreenWidth(238),
           child: AspectRatio(
             aspectRatio: 1,
-            child: Image.asset(widget.product.images[selectedImage]),
+            child: Hero(
+              tag: widget.product.id.toString(),
+              child: Image.asset(widget.product.images[selectedImage]),
+            ),
           ),
+        ),
+        SizedBox(
+          height: AppSizeConfig.getProportionateScreenWidth(20),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

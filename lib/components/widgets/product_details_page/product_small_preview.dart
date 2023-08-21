@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_e_commerce_app/config/app_constants.dart';
 
 import '../../../config/app_colors.dart';
 import '../../../config/app_size_config.dart';
@@ -22,7 +23,8 @@ class ProductSmallPreview extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
+      child: AnimatedContainer(
+        duration: AppConstants.kAnimationDuration,
         margin: EdgeInsets.only(right: AppSizeConfig.getProportionateScreenWidth(15)),
         padding: EdgeInsets.all(AppSizeConfig.getProportionateScreenHeight(8)),
         height: AppSizeConfig.getProportionateScreenWidth(48),

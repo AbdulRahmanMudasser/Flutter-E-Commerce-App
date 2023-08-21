@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce_app/components/widgets/sign_up_page/validate_sign_up_form.dart';
+import 'package:flutter_e_commerce_app/helper/keyboard_util.dart';
 
 import '../../../config/app_size_config.dart';
 import '../../../config/app_string.dart';
@@ -25,6 +26,8 @@ class SignUpForm extends StatelessWidget {
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
+
+                KeyboardUtil.hideKeyboard(context);
 
                 // go to complete profile page
                 Navigator.pushNamed(context, "/completeProfilePage");
