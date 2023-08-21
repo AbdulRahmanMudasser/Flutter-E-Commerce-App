@@ -23,6 +23,8 @@ class AppAssets {
   static const String banner1 = "assets/images/Image Banner 2.png";
   static const String banner2 = "assets/images/Image Banner 3.png";
 
+  static const String profilePic = "assets/images/profilePic.jpg";
+
   // icons
 
   static const String mail = "assets/icons/Mail.svg";
@@ -54,5 +56,12 @@ class AppAssets {
   static const String trash = "assets/icons/Trash.svg";
   static const String receipt = "assets/icons/receipt.svg";
 
+  static const String cameraIcon = "assets/icons/Camera Icon.svg";
+  static const String userIcon = "assets/icons/User Icon.svg";
   static const String settings = "assets/icons/Settings.svg";
+  static const String helpCenter = "assets/icons/Question mark.svg";
+  static const String logOut = "assets/icons/Log out.svg";
+  static const String shop = "assets/icons/Shop Icon.svg";
+  static const String chat = "assets/icons/Chat bubble Icon.svg";
+  static const String heartIcon = "assets/icons/Heart Icon.svg";
 }

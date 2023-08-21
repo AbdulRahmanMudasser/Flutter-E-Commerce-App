@@ -4,12 +4,11 @@ import 'package:flutter_e_commerce_app/components/widgets/top_rounded_container.
 import 'package:flutter_e_commerce_app/config/app_size_config.dart';
 import 'package:flutter_e_commerce_app/config/app_string.dart';
 
-import '../components/widgets/product_details/color_dots_row.dart';
-import '../components/widgets/product_details/custom_app_bar.dart';
-import '../components/widgets/product_details/product_description.dart';
-import '../components/widgets/product_details/product_details_argument.dart';
-import '../components/widgets/product_details/product_images.dart';
-
+import '../components/widgets/product_details_page/color_dots_row.dart';
+import '../components/widgets/product_details_page/custom_app_bar.dart';
+import '../components/widgets/product_details_page/product_description.dart';
+import '../components/widgets/product_details_page/product_details_argument.dart';
+import '../components/widgets/product_details_page/product_images.dart';
 class ProductDetailsPage extends StatelessWidget {
   const ProductDetailsPage({super.key});
 

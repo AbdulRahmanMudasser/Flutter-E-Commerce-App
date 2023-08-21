@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_e_commerce_app/components/widgets/custom_bottom_navigation_bar.dart';
+import 'package:flutter_e_commerce_app/config/app_enums.dart';
 import 'package:flutter_e_commerce_app/config/app_size_config.dart';
 
 import '../components/widgets/home_page/categories/categories.dart';
@@ -44,6 +46,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const CustomBottomNavigationBar(selectedMenu: MenuState.home,),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_commerce_app/components/widgets/product_details/rounded_icon_button.dart';
+import 'package:flutter_e_commerce_app/components/widgets/product_details_page/rounded_icon_button.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../config/app_assets.dart';

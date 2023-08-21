@@ -87,7 +87,6 @@ class AppStrings {
   static const String product8Desc =
       "Stay cool and stylish this summer with our Breezy Linen Summer Shirt. Crafted from lightweight and breathable linen fabric, this shirt is a perfect blend of comfort and fashion.";
 
-
   static const String searchProduct = "Search Product";
   static const String summerSurprise = "A Summer Surprise \n";
   static const String cashback = "Cashback 20%";
@@ -111,4 +110,11 @@ class AppStrings {
   static const String addVoucherCode = "Add Voucher Code";
   static const String total = "Total:\n";
   static const String checkout = "Check Out";
+
+  static const String profile = "Profile";
+  static const String myAccount = "My Account";
+  static const String notifications = "Notifications";
+  static const String settings = "Settings";
+  static const String helpCenter = "Help Center";
+  static const String logout = "Logout";
 }
